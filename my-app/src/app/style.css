@@ -1,0 +1,109 @@
+/* Custom CSS for Murphy's Bar & Grill */
+
+.bg-green {
+    background-color: #2d5016 !important;
+}
+
+.navbar-brand .logo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc !important;
+}
+
+/* St. Patrick's Day link - white by default, blue on hover */
+.navbar-nav .nav-link.st-patricks {
+    color: white !important;
+}
+
+.navbar-nav .nav-link.st-patricks:hover {
+    color: #007bff !important;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+    background-image: url('/murphys-new-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 40px 20px;
+}
+
+.royal-badge {
+    background-color: #2d5016;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
+    color: white !important;
+}
+
+.hero-content p {
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white !important;
+}
+
+/* Hours Section */
+.hours-section {
+    background-color: #2d5016;
+}
+
+.hours-section h3 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.hours-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hours-section .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0 10px;
+    }
+}
